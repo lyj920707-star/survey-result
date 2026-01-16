@@ -106,8 +106,8 @@ def process_all_files(inbound_dir: Path, data_dir: Path, dry_run: bool = False,
         if not_found:
             print(f"경고: 다음 파일을 찾을 수 없습니다: {', '.join(not_found)}")
     else:
-        # 모든 파일 처리 (하위 디렉토리는 제외)
-        files = [f for f in inbound_dir.iterdir() if f.is_file()]
+        # 모든 파일 처리 (하위 디렉토리 및 .gitkeep 파일 제외)
+        files = [f for f in inbound_dir.iterdir() if f.is_file() and f.name != '.gitkeep']
 
     if not files:
         print("처리할 파일이 없습니다.")
