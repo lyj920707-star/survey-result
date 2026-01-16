@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python src/convert_to_ansi.py:*)",
+      "Bash(python -c:*)",
+      "Bash(python scripts/run_preprocessing.py:*)",
+      "Bash(python scripts/run_all.py:*)",
+      "Bash(powershell:*)",
+      "Bash(python scripts/run_qualitative.py:*)"
+    ]
+  }
+}
