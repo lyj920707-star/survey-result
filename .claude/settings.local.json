@@ -7,7 +7,17 @@
       "Bash(python scripts/run_preprocessing.py:*)",
       "Bash(python scripts/run_all.py:*)",
       "Bash(powershell:*)",
-      "Bash(python scripts/run_qualitative.py:*)"
+      "Bash(python scripts/run_qualitative.py:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRemove temporary test content from README.md\n\nThe temporary test section has been removed to keep the documentation clean and focused on the actual project functionality.\n\nCo-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git branch:*)",
+      "Bash(where gh:*)",
+      "Bash(gh issue view:*)",
+      "Bash(dir:*)",
+      "Bash(python scripts/setup_workspace.py:*)"
     ]
   }
 }
